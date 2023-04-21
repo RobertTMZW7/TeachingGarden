@@ -19,6 +19,7 @@
 		0488E736296362F900BF69D0 /* DetailedRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488E735296362F900BF69D0 /* DetailedRecipeView.swift */; };
 		0488E7382963630100BF69D0 /* CustomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488E7372963630100BF69D0 /* CustomData.swift */; };
 		0488E73A2963631100BF69D0 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0488E7392963631100BF69D0 /* RecipeData.swift */; };
+		40363C2A29F337B50037A2A2 /* YouTubePlayerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 40363C2929F337B50037A2A2 /* YouTubePlayerKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		0488E735296362F900BF69D0 /* DetailedRecipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedRecipeView.swift; sourceTree = "<group>"; };
 		0488E7372963630100BF69D0 /* CustomData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomData.swift; sourceTree = "<group>"; };
 		0488E7392963631100BF69D0 /* RecipeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
+		40363C2729F1EA320037A2A2 /* YouTubePlayerKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YouTubePlayerKit; path = ../../YouTubePlayerKit; sourceTree = "<group>"; };
+		40363C2829F1EA5E0037A2A2 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../../YouTubePlayerKit/Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40363C2A29F337B50037A2A2 /* YouTubePlayerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				0488E71A2963621D00BF69D0 /* TeachingGardenV3 */,
 				0488E7192963621D00BF69D0 /* Products */,
+				40363C2629F1EA310037A2A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +96,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		40363C2629F1EA310037A2A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40363C2829F1EA5E0037A2A2 /* Package.swift */,
+				40363C2729F1EA320037A2A2 /* YouTubePlayerKit */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +121,9 @@
 			dependencies = (
 			);
 			name = TeachingGardenV3;
+			packageProductDependencies = (
+				40363C2929F337B50037A2A2 /* YouTubePlayerKit */,
+			);
 			productName = TeachingGardenV3;
 			productReference = 0488E7182963621D00BF69D0 /* TeachingGardenV3.app */;
 			productType = "com.apple.product-type.application";
@@ -298,7 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TeachingGardenV3/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JSLJYW98MV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -332,7 +349,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TeachingGardenV3/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = JSLJYW98MV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -381,6 +398,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40363C2929F337B50037A2A2 /* YouTubePlayerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YouTubePlayerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0488E7102963621D00BF69D0 /* Project object */;
 }

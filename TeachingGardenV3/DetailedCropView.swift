@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct detailedcropview: View {
     
@@ -142,6 +143,32 @@ struct detailedcropview: View {
                             
                         }
                     }
+                    
+                    //Source
+                    if (crop.source == "nil") {
+                      // block of code if condition is true
+                    }
+                    else {
+                        
+                        Group{
+                            Text("Source:")
+                                .font(.title3)
+                                .padding(.top)
+                                .fontWeight(.semibold)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .padding(.leading)
+                            
+                            Text(crop.source)
+                                .font(.body)
+                                .padding(.horizontal)
+                                .padding(.bottom)
+                                .padding(.top)
+                                .multilineTextAlignment(.leading)
+                            
+                            
+                        }
+                    }
+                    
                 }
             }
         }
